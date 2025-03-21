@@ -9,7 +9,64 @@
 	<h3>Formulario muy sencillo</h3>
 
 	<!-- <form action="javascript:recibeform()" method="post" autocomplete="off" > -->
+
 	<form action="./procesaform.php" method="post" autocomplete="off" >
+		<input type="color" list="list_colors">
+		  <datalist id="list_colors">
+		    <option value="#FF0000"></option>
+		    <option value="#00FF00"></option>
+		    <option value="#0000FF"></option>
+		  </datalist>
+		  <br/><br/>
+
+
+		<input type="date" list="date" value="2024-02-23">
+		  <datalist id="date">
+		    <option value="2024-02-23">23 de Febrero</option>
+		    <option value="2024-03-23">23 de Marzo</option>
+		    <option value="2024-04-23">23 de Abril</option>
+		  </datalist>
+		  <br/><br/>
+
+		 <input type="range" list="list_satis" min="1" max="5" value="3">
+		  <output></output>
+		  <datalist id="list_satis">
+		    <option value="1">Muy satisfecho.</option>
+		    <option value="2">Satisfecho.</option>
+		    <option value="3">Indiferente.</option>
+		    <option value="4">Decepcionado.</option>
+		    <option value="5">Muy decepcionado.</option>
+		  </datalist>
+			<br/><br/>
+
+
+		<input type="text" list="items">
+		 <datalist id="items">
+		   <option value="manzdev">ManzDev</option>
+		   <option value="afor_digital">Afor_digital</option>
+		   <option value="padawanstrainer">PadawansTrainer</option>
+		   <option value="chrisvdev">ChrisvDev</option>
+		 </datalist>
+		 <br/><br/>
+
+		<label for="opciones" disable selected>Seleccionar la opción deseado</label>
+		<select multiple>
+			<option disabled selected>Seleccione una opción</option>
+			<hr/>
+		    <option value="1">Opción 1</option>
+		    <option value="2">Opción 2</option>
+		    <option value="3">Opción 3</option>
+	 	 </select>
+	 	 <br/><br/>
+
+	 	<label for="edcolor">Seleccionar color deseado</label>
+		<input type="color" name="edcolor" value="FF0000">
+		<br/><br/>
+
+		<input type="radio" name="category" value="user"> Particular
+		<input type="radio" name="category" value="#FF0000"> Empresa
+		<br/><br/>
+
 		<label for="nombre"> Escribe tu nombre: </label>
 		<input type="text" name="nombre" value="" placeholder="escribe tu nombre" />
 		<br/>
