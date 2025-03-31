@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="principal.css">
+	<title>Document</title>
+</head>
+<body>
+	<form method="post" action="/send/">
+		  <input type="text" name="No. Control" placeholder="Numero de Control"
+		         required pattern="(C|M|D)?[0-9]{2}39[0-9]{4}"
+		         title="Numero de control tiene este formato: ">
+	</form>
+
+	<br/><br/>
+	<input type="submit" value="enviar"/>
+	
+</body>
+</html>

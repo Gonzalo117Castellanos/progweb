@@ -1,0 +1,8 @@
+:is(input,textarea):invalid {
+  background: red;
+  color: #fff;
+}
+
+::placeholder {
+  color: darkred;
+}
