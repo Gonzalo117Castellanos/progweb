@@ -1,0 +1,30 @@
+-Crear repositorio en github
+-Copia la url del repositorio
+-Ir a la carpeta donde se guardara el repositorio
+-git clone url_repo
+
+-En la carpegta del proyecto, hacer cambios,agregar archivos en mi proyecto. Crear html,css,js..
+
+-Ver repositorio vinculado al local
+git remote -v
+
+-Ver status de versiones
+git status
+
+Muestra archivos en rojo (no agregados)para seguimiento de versiones, con cambio, eliminados...
+
+-Preparar todos los archivos para guardar en la sigueinte versión a guardar
+
+git add.
+
+
+-Ejecutar 
+git status
+
+Muestra en verde todos los archivos preparados para agregar en la sigte. versión a guardar
+
+-Guardar todos los cambios en una nueva versión 
+git commit -m  "Descripción de lo hecho en la versión"
+
+-Subir la versión recién guardada al repositorio remoto
+git push

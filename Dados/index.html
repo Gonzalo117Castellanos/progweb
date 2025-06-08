@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de Dados</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <h1>🎲 Juego de Dados</h1>
+  
+  <div class="juego">
+    <div class="jugador">
+      <h2>Jugador 1</h2>
+      <p>Puntos: <span id="puntos1">0</span></p>
+      <div class="dado" id="dado1"></div>
+    </div>
+    <div class="jugador">
+      <h2>Jugador 2</h2>
+      <p>Puntos: <span id="puntos2">0</span></p>
+      <div class="dado" id="dado2"></div>
+    </div>
+  </div>
+  
+  <div class="botones">
+    <button onclick="tirarDados()">Tirar Dados</button>
+    <button onclick="reiniciarJuego()">Reiniciar Juego</button>
+  </div>
+<div id="resultado" class="mensaje"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

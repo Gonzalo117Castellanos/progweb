@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="estilos.css" />
+		<script src="prog.js"></script>
+		<title>Formulario con validaciones</title>
+	</head>
+	<body>
+		
+        <form target="_self">
+            <h1>Restaurante Rápido y Sabroso</h1>
+            <div>
+                <h3>Añade un producto:</h3>
+            </div>
+            <div>
+                <label for="categoria">Categoría:</label>
+
+                <select name="categoria" required>
+
+                    <option value="">Seleccione Categoría …</option>
+
+                    <option value="Pizza">Pizza</option>
+
+                    <option value="Hamburguesa">Hamburguesa</option>
+                </select>
+<br>
+            </div>
+            <div id="guisados">
+                <p><strong>Guisados que ofrecemos</strong></p>
+            </div>  
+
+            <div>
+                <label for="guisado">Guisados:</label>
+
+          <input  name="guisado" id="guisado" class="input"  type="text" 
+  pattern="^(Carnitas|Mexicana|Hawaiana|Vegetariana|BBQ)$" title="Ingrese un guisado válido: Carnitas, Mexicana, Hawaiana, Vegetariana, BBQ" placeholder="Ingrese un guisado" required/>
+
+
+
+
+            </div>
+            
+            <div>
+                <label for="cantidad">Cantidad:</label>
+
+                <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100  placeholder="Ingrese una cantidad"required>
+            </div>
+            
+            <div class="sizes">
+
+                <input type="radio" name="size" id="small" value="pequeña" checked><label for="small">Pequeña($10+)</label>
+
+                <input type="radio" name="size" id="medium" value="mediana"><label for="medium">Mediana($20+)</label>
+
+                <input type="radio" name="size" id="big" value="grande"><label for="big">Grande($30+)</label>
+                
+            </div>
+        <br>
+            <div class="complementos">
+
+                <strong>Complementos:</strong><br>
+<br>
+                <input type="checkbox" id="nachos" name="nachos" value="Nachos"><label for="nachos">Nachos</label><br>
+
+                <input type="checkbox" id="aros" name="aros" value="Aros de Cebolla"><label for="aros">Aros de Cebolla</label><br>
+
+                <input type="checkbox" id="papas" name="papas" value="Papas Fritas"><label for="papas">Papas Fritas</label><br>
+
+                <input type="checkbox" id="canelazos" name="canelazos" value="Canelazos"><label for="canelazos">Canelazos</label><br>
+
+            </div>
+        
+            <div>
+                <input type="submit" id="send-button" name="send-button" class="button">
+
+                <input type="reset" value="Borrar" class="button">
+            </div>
+
+        </form>
+
+        <div class="container" id="container">
+
+                <input type="button" id="finish" class="button" value="Completar Compra">
+        </div>
+
+	</body>
+</html>

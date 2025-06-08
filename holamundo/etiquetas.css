@@ -1,0 +1,29 @@
+strong {
+  font-weight: bold;
+  color: orangered
+}
+
+.anuncio{
+  background: indigo;
+  color: white
+}
+
+.primero {
+  /* 
+background: indigo;
+*/
+  color: orange
+}
+
+.segundo{
+  color: pink
+}
+
+.anuncio.segundo{
+  font-weigth: bold  
+}
+
+#pagina{
+  background: yellow; 
+  color: green
+}
